@@ -21,16 +21,13 @@ ArticleGenius is an innovative web application that utilizes the power of AI to 
 2. **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
+3. **Download Llama model from Huggingface**
+    Download the Llamma model and export it into the model folder. i.e src/model/llama-2-7b.ggmlv3.q8_0.bin
+
 3. **Run the App:**
     ```bash
     streamlit run app.py
-## Building the Docker Image
-    ```bash
-    docker build -t article-generator-app .
 
-## Running the Container
-    ```bash
-    docker run -p 8501:8501 article-generator-app
 
 
 

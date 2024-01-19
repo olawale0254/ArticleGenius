@@ -24,6 +24,7 @@ def main():
     if submit:
         article_gen = ArticleGenerator()
         generated_article = article_gen.generate(input_topic, word_count, article_style)
+        print(generated_article)
         st.write(generated_article)
 
 if __name__ == "__main__":

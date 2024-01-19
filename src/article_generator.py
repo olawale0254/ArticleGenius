@@ -3,7 +3,7 @@ from langchain.llms import CTransformers
 
 class ArticleGenerator:
     def __init__(self):
-        self.llm = CTransformers(model='models/llama-2-7b-chat.ggmlv3.q2_K.bin',
+        self.llm = CTransformers(model='src/models/llama-2-7b.ggmlv3.q8_0.bin',
                                  model_type='llama',
                                  config={'max_new_tokens': 256, 'temperature': 0.01})
 
